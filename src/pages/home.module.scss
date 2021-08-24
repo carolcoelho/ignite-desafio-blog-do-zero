@@ -1,1 +1,38 @@
-// TODO
+.posts {
+    a {
+        display: block;
+        transition: filter 0.2s;
+
+        & + a {
+            margin-top: 3rem;
+        }
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+            margin-top: 0.5rem;
+            color: var(--body);
+        }
+    }
+
+    button {
+        background: transparent;
+        border: none;
+
+        color: var(--highlight);
+        margin-top: 4rem;
+        font-weight: 600;
+        font-size: 1.125;
+        line-height: 1.375rem;
+
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+    }
+}
